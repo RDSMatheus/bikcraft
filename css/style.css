@@ -1,10 +1,10 @@
-@import "/bikcraft-final/css/global/global.css";
-@import "/bikcraft-final/css/global/header.css";
+@import "./global/global.css";
+@import "./global/header.css";
 
 /* utilidades */
 @import "./utilidades/componentes.css";
 /* home */
-@import "/bikcraft-final/css/home/introducao.css";
+@import "./home/introducao.css";
 /* tipografia */
 @import "./utilidades/tipografia.css";
 /* cores */
