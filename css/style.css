@@ -9,7 +9,5 @@
 @import "./utilidades/tipografia.css";
 /* cores */
 @import "./utilidades/cores.css";
-
-
-
-
+/* bicicletas */
+@import "./bicicletas/bicicletas-lista.css";
