@@ -12,7 +12,7 @@
   margin: 0 auto;
   padding: 0 20px;
 }
-.parceiros ul li {
+.parceiros li {
   display: flex;
   padding: 32px;
   border-left: 2px solid var(--cor-02);
@@ -31,6 +31,9 @@
 @media (max-width: 800px) {
   .parceiros {
     padding-bottom: 60px;
+  }
+  .parceiros ul li {
+    padding: 20px;
   }
   .parceiros h2 {
     margin-bottom: 20px;
