@@ -13,6 +13,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, auto));
   gap: 40px 80px;
+  padding-bottom: 120px;
 }
 @media (max-width: 800px) {
   .vantagens h2 {
