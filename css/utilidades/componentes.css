@@ -71,6 +71,9 @@
   padding-bottom: 60px;
   background-color: var(--cor-11);
 }
+.titulo h1 {
+  margin-bottom: 20px;
+}
 .titulo p {
   margin-bottom: 4px;
 }
