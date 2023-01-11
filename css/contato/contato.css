@@ -1,0 +1,53 @@
+.contato-bg {
+  background: linear-gradient(var(--cor-11) 50%, var(--cor-01) 50%);
+}
+.contato {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+.contato-loja {
+  background-color: var(--cor-12);
+  padding: 60px 60px;
+  border-radius: 5px 0 0 5px;
+}
+.contato-loja h2 {
+  margin-bottom: 60px;
+}
+.contato-endereco,
+.contato-email,
+.contato-telefone {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 8px;
+  align-items: center;
+}
+.contato-endereco,
+.contato-email {
+  margin-bottom: 32px;
+}
+.contato-telefone {
+  margin-bottom: 60px;
+}
+.contato-endereco li,
+.contato-email li {
+  grid-column: 2 / -1;
+}
+.contato-rede-social {
+  display: flex;
+  gap: 32px;
+  margin-left: 26px;
+}
+.contato-form-bg {
+  background: var(--cor-00);
+}
+.contato-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  padding: 60px;
+}
+.form:nth-child(3),
+.form:nth-child(4) {
+  grid-column: span 2;
+}
+
