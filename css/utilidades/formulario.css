@@ -1,0 +1,21 @@
+.form label {
+  display: block;
+  font: 600 1rem/1.5 "Poppins", sans-seriff;
+  margin-bottom: 4px;
+}
+.input {
+  padding: 12px;
+  height: 48px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: var(--cor-02);
+  border: 1px solid var(--cor-01);
+  margin-bottom: 20px;
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+}
+.input:focus {
+  outline: none;
+  border-color: var(--cor-p1);
+  background-color: var(--cor-00);
+  box-shadow: 0 0 0 2px #fea;
+}

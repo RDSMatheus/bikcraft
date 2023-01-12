@@ -1,35 +1,42 @@
 .contato-bg {
   background: linear-gradient(var(--cor-11) 50%, var(--cor-01) 50%);
 }
+#contato{
+  background: var(--cor-01);
+}
 .contato {
   display: grid;
-  grid-template-columns: 5fr 7fr;
+  grid-template-columns: 1fr 3fr;
+}
+.contato-loja,
+.contato-form {
+  padding: 60px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
 }
 .contato-loja {
   background-color: var(--cor-12);
-  padding: 60px 60px;
   border-radius: 5px 0 0 5px;
 }
 .contato-loja h2 {
   margin-bottom: 60px;
 }
-.contato-endereco,
-.contato-email,
-.contato-telefone {
+.contato-loja-endereco,
+.contato-loja-email,
+.contato-loja-telefone {
   display: grid;
   grid-template-columns: max-content 1fr;
   gap: 8px;
   align-items: center;
 }
-.contato-endereco,
-.contato-email {
+.contato-loja-endereco,
+.contato-loja-email {
   margin-bottom: 32px;
 }
-.contato-telefone {
+.contato-loja-telefone {
   margin-bottom: 60px;
 }
-.contato-endereco li,
-.contato-email li {
+.contato-loja-endereco li,
+.contato-loja-email li {
   grid-column: 2 / -1;
 }
 .contato-rede-social {
@@ -37,17 +44,43 @@
   gap: 32px;
   margin-left: 26px;
 }
-.contato-form-bg {
-  background: var(--cor-00);
-}
+
 .contato-form {
+  background: var(--cor-00);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
-  padding: 60px;
+  border-radius: 0 5px 5px 0;
 }
 .form:nth-child(3),
 .form:nth-child(4) {
-  grid-column: span 2;
+  grid-column: 1 / -1;
 }
 
+@media (max-width: 800px) {
+  .contato {
+    grid-template-columns: 1fr;
+  }
+  .contato-loja,
+  .contato-form {
+    padding: 20px;
+  }
+  .contato-loja {
+    border-radius: 5px 5px 0 0;
+  }
+  .contato-form {
+    border-radius: 0 0 5px 5px;
+  }
+  .contato-loja h2,
+  .contato-loja-telefone {
+    margin-bottom: 32px;
+  }
+  .contato-rede-social {
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .contato-form {
+    grid-template-columns: 1fr;
+  }
+}

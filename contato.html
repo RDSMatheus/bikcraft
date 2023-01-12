@@ -19,7 +19,7 @@
     content="Contato">
 </head>
 
-<body>
+<body id="contato">
   <header class="header-bg">
     <div class="header container">
       <a href="./"><img src="./img/bikcraft.svg"
@@ -45,24 +45,27 @@
         <section class="contato-loja"
           aria-label="Contato da loja">
           <h2 class="font-1-m cor-00">Loja Online</h2>
-          <ul class="font-1-m cor-05 contato-endereco">
+          <ul class="font-1-m cor-05 contato-loja-endereco">
             <img src="./img/icones/local.svg"
               alt="">
             <li>Rua Ali Perto, 35</li>
             <li>Rio de Janeiro - RJ</li>
             <li>Brasil - Terra - Vita Láctea</li>
           </ul>
-          <ul class="font-1-m cor-05 contato-email">
-            <img src="./img/icones/email.svg"
-              alt="">
-            <li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
-            <li><a href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a></li>
-          </ul>
-          <ul class="font-1-m cor-05 contato-telefone">
-            <img src="./img/icones/telefone.svg"
-              alt="">
-            <li><a href="tel:+55 21 9999-9999">+55 21 9999-9999</a></li>
-          </ul>
+          <address>
+            <ul class="font-1-m cor-05 contato-loja-email">
+              <img src="./img/icones/email.svg"
+                alt="">
+              <li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
+              <li><a href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a></li>
+            </ul>
+            <ul class="font-1-m cor-05 contato-loja-telefone">
+              <img src="./img/icones/telefone.svg"
+                alt="">
+              <li><a href="tel:+55 21 9999-9999">+55 21 9999-9999</a></li>
+            </ul>
+          </address>
+
           <div class="contato-rede-social">
             <img src="./img/redes/facebook-p.svg"
               alt="">
@@ -78,8 +81,7 @@
             class="contato-form">
 
             <div class="form">
-              <label for="nome"
-                class="font-1-s label">Nome</label>
+              <label for="nome">Nome</label>
               <input type="text"
                 id="nome"
                 class="input"
@@ -87,8 +89,7 @@
             </div>
 
             <div class="form">
-              <label for="telefone"
-                class="font-1-s">Telefone</label>
+              <label for="telefone">Telefone</label>
               <input type="tel"
                 id="telefone"
                 class="input"
@@ -96,8 +97,7 @@
             </div>
 
             <div class="form">
-              <label for="email"
-                class="font-1-s">Email</label>
+              <label for="email">Email</label>
               <input type="email"
                 id="email"
                 class="input"
@@ -105,57 +105,56 @@
             </div>
 
             <div class="form">
-              <label for="msg"
-                class="font-1-s">Mensagem</label>
+              <label for="msg">Mensagem</label>
               <textarea id="msg"
                 class="input"
-                placeholder="Mensagem"></textarea>
+                placeholder="O que você precisa?"></textarea>
             </div>
-            <a href=""
-              class="btn">Enviar Mensagem</a>
+            <button href=""
+              class="btn">Enviar Mensagem</button>
 
           </form>
         </section>
       </div>
     </div>
-    <section class="lojas-bg">
-      <h2 class="font-1-xxl container">nossas lojas<span class="cor-p1">.</span></h2>
-        <div class="lojas container">
-
-          <div class="lojas-item">
-            <div class="lojas-item-img">
-              <img src="./img/lojas/rj.jpg"
-                alt="Localização da loja no RJ">
-            </div>
-            <div class="lojas-item-conteudo">
-              <h3 class="font-1-xl">Rio de Janeiro</h3>
-              <ul class="cor-08 font-2-m">
-                <li>Rua Ali Perto, 25</li>
-                <li><a href="mailto:rio@bikcraft.com">rio@bikcraft.com</a></li>
-                <li>Rio de Janeiro - RJ</li>
-                <li><a href="tel:21 9999-9999">21 9999-9999</a></li>
-              </ul>
-              <p class="font-2-s"><img src="./img/icones/horario.svg" alt="">08-18h de seg à dom</p>
-            </div>
+    <article class="lojas container">
+      <h2 class="font-1-xxl">nossas lojas<span class="cor-p1">.</span></h2>
+        <div class="lojas-item">
+          <div class="lojas-item-img">
+            <img src="./img/lojas/rj.jpg"
+              alt="Localização da loja no RJ">
           </div>
-          <div class="lojas-item">
-            <div class="lojas-item-img">
-              <img src="./img/lojas/rj.jpg"
-                alt="Localização da loja no RJ">
-            </div>
-            <div class="lojas-item-conteudo">
-              <h3 class="font-1-xl">São Paulo</h3>
-              <ul class="cor-08 font-2-m">
-                <li>Rua Ali Perto, 25</li>
-                <li><a href="mailto:sp@bikcraft.com">sp@bikcraft.com</a></li>
-                <li>São Paulo - SP</li>
-                <li><a href="tel:21 9999-9999">11 9999-9999</a></li>
-              </ul>
-              <p class="font-2-s"><img src="./img/icones/horario.svg" alt="">08-18h de seg à dom</p>
-            </div>
+          <div class="lojas-item-conteudo">
+            <h3 class="font-1-xl">Rio de Janeiro</h3>
+            <ul class="cor-08 font-2-m">
+              <li>Rua Ali Perto, 25</li>
+              <li><a href="mailto:rio@bikcraft.com">rio@bikcraft.com</a></li>
+              <li>Rio de Janeiro - RJ</li>
+              <li><a href="tel:21 9999-9999">21 9999-9999</a></li>
+            </ul>
+            <p class="font-1-s"><img src="./img/icones/horario.svg"
+                alt="">08-18h de seg à dom</p>
           </div>
         </div>
-    </section>
+        <div class="lojas-item">
+          <div class="lojas-item-img">
+            <img src="./img/lojas/rj.jpg"
+              alt="Localização da loja no RJ">
+          </div>
+          <div class="lojas-item-conteudo">
+            <h3 class="font-1-xl">São Paulo</h3>
+            <ul class="cor-08 font-2-m">
+              <li>Rua Ali Perto, 25</li>
+              <li><a href="mailto:sp@bikcraft.com">sp@bikcraft.com</a></li>
+              <li>São Paulo - SP</li>
+              <li><a href="tel:21 9999-9999">11 9999-9999</a></li>
+            </ul>
+            <p class="font-1-s"><img src="./img/icones/horario.svg"
+                alt="">08-18h de seg à dom</p>
+          </div>
+        </div>
+      </div>
+    </article>
 
   </main>
   <footer class="footer-bg">

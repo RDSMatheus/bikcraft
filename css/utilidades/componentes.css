@@ -14,6 +14,9 @@
   text-transform: uppercase;
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
   max-width: max-content;
+  border: none;
+  grid-column: 1 / -1;
+  cursor: pointer;
 }
 .btn.secundario {
   background: var(--cor-10);
@@ -77,19 +80,7 @@
 .titulo p {
   margin-bottom: 4px;
 }
-.input {
-  padding: 12px;
-  height: 48px;
-  width: 100%;
-  border-radius: 5px;
-  background-color: var(--cor-02);
-  border: 1px solid var(--cor-01);
-  margin-bottom: 20px;
-  font: 400 1rem/1.5 "Roboto", sans-serif;
-}
-.input:focus {
-  outline: 2px solid var(--cor-p1);
-}
+
 .input#msg {
   height: 160px;
 }
@@ -97,7 +88,7 @@
 @media (max-width: 800px) {
   .titulo-bg {
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
   }
   .titulo p {
     font-size: 1rem;
