@@ -1,3 +1,12 @@
+.contato-form,
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.col {
+  grid-column: 1 / -1;
+}
 .form label {
   display: block;
   font: 600 1rem/1.5 "Poppins", sans-seriff;
@@ -18,4 +27,18 @@
   border-color: var(--cor-p1);
   background-color: var(--cor-00);
   box-shadow: 0 0 0 2px #fea;
+}
+@media (max-width: 800px) {
+  .contato-form,
+  .formulario {
+    padding: 20px;
+  }
+  .contato-form .formulario {
+    border-radius: 0 0 5px 5px;
+  }
+}
+@media (max-width: 600px) {
+  .contato-form .formulario {
+    grid-template-columns: 1fr;
+  }
 }

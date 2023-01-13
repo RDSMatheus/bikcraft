@@ -6,7 +6,7 @@
 }
 .contato {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 5fr 7fr;
 }
 .contato-loja,
 .contato-form {
@@ -47,14 +47,7 @@
 
 .contato-form {
   background: var(--cor-00);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
   border-radius: 0 5px 5px 0;
-}
-.form:nth-child(3),
-.form:nth-child(4) {
-  grid-column: 1 / -1;
 }
 
 @media (max-width: 800px) {
