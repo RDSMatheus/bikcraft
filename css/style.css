@@ -6,6 +6,7 @@
 /* utilidades */
 @import "./utilidades/componentes.css";
 @import "./utilidades/formulario.css";
+@import "./utilidades/simple-anime.css";
 /* home */
 @import "./home/introducao.css";
 @import "./home/tecnologia.css";

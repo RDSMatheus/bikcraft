@@ -8,6 +8,7 @@
   padding-bottom: 60px;
   gap: 40px;
   justify-content: start;
+  background: url("../../img/dec/top-right.svg") no-repeat top 40px right;
 }
 .bicicletas-img {
   position: relative;
